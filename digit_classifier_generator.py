@@ -7,7 +7,16 @@ from model_class import Model
 
 
 def digit_classifier_generator(filepath, train_batch_size=64, learn_rate=0.005, epochs=10, optimizer_type='Adam', dropout=0.15, hidden_layers_count=2, hidden_layer_size=128, rand_seed=7):
+	"""Generates and saves a trained model on the MNIST dataset
+	Inputs: 
+	filepath -- Where the model will be saved to
+	Hyperparamters -- The various hyperparameters used to build the model
 	
+	"""
+
+
+
+
 	# Hyperparameters
 	train_batch_size = train_batch_size
 	learn_rate = learn_rate

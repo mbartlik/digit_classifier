@@ -1,6 +1,12 @@
 import torch
 from digit_classifier_generator import digit_classifier_generator
 
+
+"""
+This file runs the digit_classifier_generator on various combinations of hyperparameters
+"""
+
+
 # Hyperparameters to be tried
 learn_rates = [0.001]
 epochs = [20]
