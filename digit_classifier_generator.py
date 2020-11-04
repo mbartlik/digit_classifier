@@ -38,7 +38,7 @@ def digit_classifier_generator(filepath, train_batch_size=64, learn_rate=0.005, 
 											])
 
 	# Load datasets
-	train_dataset = torchvision.datasets.MNIST('MNIST_dataset', train=True, transform=transform)
+	train_dataset = torchvision.datasets.MNIST('MNIST_dataset', train=True, transform=transform, download=True)
 	test_dataset= torchvision.datasets.MNIST('MNIST_dataset', train=False, transform=transform)
 
 	# Make data loaders
